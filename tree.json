@@ -1,0 +1,47 @@
+{
+    "nombre pair": {
+        "chance": 0.5,
+        "enfants": {
+            "voiture": {
+                "chance": 0.6,
+                "enfants": {}
+            }, 
+            "bille": {
+                "chance": 0.4, 
+                "enfants": {
+                    "rouge": {
+                        "chance": 1, 
+                        "enfants": {}
+                    }
+                }
+            }
+        }
+    },
+    "nombre impair": {
+        "chance": 0.5,
+        "enfants": {
+            "voiture": {
+                "chance": 0.6,
+                "enfants": {
+                    "bleu": {
+                        "chance": 0.1, 
+                        "enfants": {}
+                    }, 
+                    "rouge": {
+                        "chance": 0.9,
+                        "enfants": {}
+                    }
+                }
+            }, 
+            "bille": {
+                "chance": 0.4, 
+                "enfants": {
+                    "rouge": {
+                        "chance": 1, 
+                        "enfants": {}
+                    }
+                }
+            }
+        }
+    }
+}

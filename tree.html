@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <title>Tree</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <ul class="tree" id="prob"></ul>
+
+
+    <script>
+        var data = {
+        "nombre pair": {
+            "chance": 0.5,
+            "enfants": {
+                "voiture": {
+                    "chance": 0.6,
+                    "enfants": {}
+                }, 
+                "bille": {
+                    "chance": 0.4, 
+                    "enfants": {
+                        "rouge": {
+                            "chance": 1, 
+                            "enfants": {}
+                        }
+                    }
+                }
+            }
+        },
+        "nombre impair": {
+            "chance": 0.5,
+            "enfants": {
+                "voiture": {
+                    "chance": 0.6,
+                    "enfants": {
+                        "bleu": {
+                            "chance": 0.1, 
+                            "enfants": {}
+                        }, 
+                        "rouge": {
+                            "chance": 0.9,
+                            "enfants": {}
+                        }
+                    }
+                }, 
+                "bille": {
+                    "chance": 0.4, 
+                    "enfants": {
+                        "rouge": {
+                            "chance": 1, 
+                            "enfants": {}
+                        }
+                    }
+                }
+            }
+        }
+    };
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            console.log(data);
+            
+            var elem = document.getElementById("prob");
+            var add = document.createElement("span")
+            add.innerHTML = "Debut";
+            elem.appendChild(add);
+
+            addChilds(data, elem);
+
+        });
+
+        function addChilds(dataN, elemN)
+        {
+            var add2 = document.createElement("ul");
+            var keys = Object.keys(dataN);
+            for (var i = 0; i < keys.length; i++)
+            {
+                var add3 = document.createElement("li");
+                var add4 = document.createElement("span");
+                add4.innerHTML = keys[i];
+                add3.appendChild(add4);
+                add2.appendChild(add3); 
+                elemN.appendChild(add2)
+                addChilds(dataN[keys[i]]["enfants"], add3);
+            }
+        }
+    
+    
+    
+    </script>
+</body>
