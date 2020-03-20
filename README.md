@@ -70,5 +70,4 @@ Ici, les conditions de depart sont `nombre-pair` et `nombre-impair`, qui ont tou
 
 Pour commencer le serveur: `python3 application.py`. Vous verrez l'arbre des probabilités et en appuyant sur les cases vous verrez la probabilité que l'évenement se passe.
 
-![arbre]
-(https://drive.google.com/file/d/1xnjhiDhvnmW9L2eqnMtryGj2SVXnQQw-/preview)
+https://drive.google.com/file/d/1xnjhiDhvnmW9L2eqnMtryGj2SVXnQQw-/preview
