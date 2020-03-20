@@ -83,3 +83,10 @@
 .tree>li>span:before {
     outline: none;
 }
+
+input { 
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}

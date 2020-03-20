@@ -1,5 +1,5 @@
 {
-    "nombre pair": {
+    "nombre-pair": {
         "chance": 0.5,
         "enfants": {
             "voiture": {
@@ -17,7 +17,7 @@
             }
         }
     },
-    "nombre impair": {
+    "nombre-impair": {
         "chance": 0.5,
         "enfants": {
             "voiture": {
@@ -27,7 +27,7 @@
                         "chance": 0.1, 
                         "enfants": {}
                     }, 
-                    "rouge": {
+                    "vert": {
                         "chance": 0.9,
                         "enfants": {}
                     }
