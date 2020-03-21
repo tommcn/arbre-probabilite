@@ -81,6 +81,13 @@ function clicked(e) {
     socket.emit('add', {data: {parent: parentList}})
 }
 
+function send() {
+    var elem = document.getElementById("JSON");
+    var value = elem.value;
+
+    socket.emit("new", {data: value})
+}
+
 
 var socket = io();
 socket.on('connect', function() {

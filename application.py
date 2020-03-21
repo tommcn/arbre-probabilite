@@ -33,13 +33,13 @@ def loadFromFile(fname):
 def index():
     return render_template("tree.html")
 
-@socketio.on('ask')
+@socketio.on('ask')     # Refresh clients JSON tree structure from server file
 def sendJSON(message):
     with open("tree.json") as f:
         data = f.read()
     emit('JSON', data) 
 
-@socketio.on('update')
+@socketio.on('update')  # Get the chance of an event dependant on a "path"
 def updateJSON(message):
     with open("tree.json") as f:
         old = f.read()
@@ -59,10 +59,14 @@ def updateJSON(message):
 
 
 
-@socketio.on("add")
+@socketio.on("new")     # Create structure from pasted text
 def addJSON(message):
-    path = message["data"]["parent"]
-    print(path)
+    text = message["data"]
+    print(text)
+    with open("tree.json", "w+") as f:
+        f.write(text)
+    
+    emit('JSON', text) 
 
 
 def find_key(d, value):
