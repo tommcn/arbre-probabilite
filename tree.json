@@ -1,43 +1,47 @@
 {
-    "nombre-pair": {
+    "pair": {
         "chance": 0.5,
         "enfants": {
             "voiture": {
                 "chance": 0.6,
                 "enfants": {}
-            }, 
+            },
             "bille": {
-                "chance": 0.4, 
+                "chance": 0.4,
                 "enfants": {
                     "rouge": {
-                        "chance": 1, 
+                        "chance": 0.5,
+                        "enfants": {}
+                    },
+                    "bleu": {
+                        "chance": 0.5,
                         "enfants": {}
                     }
                 }
             }
         }
     },
-    "nombre-impair": {
+    "impair": {
         "chance": 0.5,
         "enfants": {
             "voiture": {
                 "chance": 0.6,
                 "enfants": {
                     "bleu": {
-                        "chance": 0.1, 
+                        "chance": 0.1,
                         "enfants": {}
-                    }, 
+                    },
                     "vert": {
                         "chance": 0.9,
                         "enfants": {}
                     }
                 }
-            }, 
+            },
             "bille": {
-                "chance": 0.4, 
+                "chance": 0.4,
                 "enfants": {
                     "rouge": {
-                        "chance": 1, 
+                        "chance": 1.0,
                         "enfants": {}
                     }
                 }
