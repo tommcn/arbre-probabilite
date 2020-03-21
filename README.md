@@ -70,6 +70,6 @@ Ici, les conditions de depart sont `nombre-pair` et `nombre-impair`, qui ont tou
 
 Pour commencer le serveur: `python3 application.py`. Vous verrez l'arbre des probabilités et en appuyant sur les cases vous verrez la probabilité que l'évenement se passe.
 
-Le fichier `generator.py` sert a créer votre propre fichier JSON en repondant a une serie de question
+Le fichier `generator.py` sert a créer votre propre fichier JSON en répondant a une série de question. C'est une façon simplifiée de créer l'arbre.
 
 https://drive.google.com/file/d/1xnjhiDhvnmW9L2eqnMtryGj2SVXnQQw-/preview
