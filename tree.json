@@ -3,17 +3,17 @@
         "chance": 0.5,
         "enfants": {
             "voiture": {
-                "chance": 0.6,
+                "chance": 0.8,
                 "enfants": {}
             },
             "bille": {
-                "chance": 0.4,
+                "chance": 0.2,
                 "enfants": {
                     "rouge": {
                         "chance": 0.5,
                         "enfants": {}
                     },
-                    "bleu": {
+                    "vert": {
                         "chance": 0.5,
                         "enfants": {}
                     }
@@ -49,3 +49,4 @@
         }
     }
 }
+    
