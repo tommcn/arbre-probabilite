@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log("DOM content loaded");
 });
-
+var socket = io.connect('http://' + document.domain + ':' + location.port);
+ 
 function addChilds(dataN, elemN)
 {
     /* ul span
