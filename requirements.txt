@@ -4,4 +4,4 @@ Flask-SocketIO==4.2.1
 gunicorn==19.5.0
 eventlet==0.31.0
 requests==2.23.0
-Werkzeug==0.16.0
+Werkzeug==2.2.3
